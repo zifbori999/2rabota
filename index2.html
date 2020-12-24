@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1 Задание
+        function sumWithDefaults(a, b) {
+
+            var b = 100;
+            return a + b;
+        }
+        let result = sumWithDefaults(29);
+        console.log(result);
+
+        //Задание 2.
+        var returnFnResult = () => 'Привет';
+        console.log(returnFnResult());
+
+        //4 Задание
+        function returnF(a) {
+            return function F() {
+                return ++a;
+            };
+        }
+        let result1 = returnF(5);
+        console.log(result1());
+
+        //4 Задание
+        function power(a, b) {
+            return Math.pow(a, b)
+        }
+        console.log(power(4, 2));
+
+        //5 Задание 
+        function compare(x) {
+            return function(y = 7) {
+                if (y > x) {
+                    return true
+                } else if (y < x) {
+                    return false
+                } else {
+                    return null
+                }
+            }
+        }
+        let result3 = compare(5);
+        console.log(result3());
+    </script>
+</body>
+
+</html>
